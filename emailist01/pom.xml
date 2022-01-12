@@ -5,7 +5,7 @@
     <artifactId>servlet-practices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>emailist01</artifactId>
+  <artifactId>emaillist01</artifactId>
   <packaging>war</packaging>
   
   <properties>
