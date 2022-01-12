@@ -18,7 +18,7 @@
 	</form>
 	<br>
 	<p>
-	리스트 바로가기
+	<a href="index.jsp">리스트 바로가기</a>
 	</p>
 </body>
 </html>

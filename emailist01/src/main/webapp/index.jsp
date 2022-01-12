@@ -24,7 +24,10 @@
 	</table>
 	<br>
 	<p>
-		추가메일 등록
+		<!-- 상대경로: 현재 위치에서 상대경로 이면  -->
+		<a href="form.jsp">추가메일 등록</a>
+		<!-- 절대경로 -->
+		<a href="/emaillist01/form.jsp">추가메일 등록</a>
 	</p>
 	<br>
 </body>
