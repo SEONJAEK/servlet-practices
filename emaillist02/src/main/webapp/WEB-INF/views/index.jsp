@@ -36,8 +36,7 @@
 	<%} %>
 	<br>
 	<p>
-		<!-- 상대경로: 현재 위치에서 상대경로 이면  -->
-		<a href="form.jsp">추가메일 등록</a>
+		
 		<!-- 절대경로 -->
 		<a href="<%=request.getContextPath()%>/el?a=form">추가메일 등록</a>
 	</p>

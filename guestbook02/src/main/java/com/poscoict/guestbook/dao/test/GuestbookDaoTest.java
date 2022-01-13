@@ -15,7 +15,6 @@ public class GuestbookDaoTest {
 		GuestbookVo vo = new GuestbookVo();
 		vo.setName("경");
 		vo.setReg_date("선재");
-		vo.setPassword("apfhd");
 		vo.setMessage("안뉴유유우우웅 하세요~~~");
 		
 		boolean result = new GuestbookDao().insert(vo);
@@ -24,8 +23,7 @@ public class GuestbookDaoTest {
 	}
 	private static void testDelete() {
 		GuestbookVo vo = new GuestbookVo();
-		vo.setNo((long)1);
-		vo.setPassword("12ㅇ34");
+		vo.setNo(1);
 		boolean result = new GuestbookDao().delete(vo);
 		System.out.println(result? "삭제성공" : "삭제 실패");
 	}
@@ -35,4 +33,5 @@ public class GuestbookDaoTest {
 			System.out.println(vo);
 		}
 	}
+	
 }

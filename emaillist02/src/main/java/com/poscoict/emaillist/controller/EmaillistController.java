@@ -17,10 +17,9 @@ public class EmaillistController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		String actionName = request.getParameter("a");
-		if("form".equals(actionName)){
+		 if("form".equals(actionName)){
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/form.jsp");
 			rd.forward(request, response);
-
 		}else if("add".equals(actionName)){
 			//post라 request도 엔코딩 해줘야 함
 			

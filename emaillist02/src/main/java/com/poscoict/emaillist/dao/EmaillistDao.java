@@ -61,7 +61,6 @@ public class EmaillistDao {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-			System.out.println("MYSQL 연결성공");
 		}
 		return result;
 	}

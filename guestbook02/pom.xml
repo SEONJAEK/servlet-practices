@@ -5,23 +5,22 @@
     <artifactId>servlet-practices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>emaillist02</artifactId>
+  <artifactId>guestbook02</artifactId>
   <packaging>war</packaging>
-  
   <properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
 	</properties>
 
 	<dependencies>
-	<dependency>
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.17</version>
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>emaillist02</finalName>
+		<finalName>guestbook02</finalName>
 		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
 		<resources>
 			<resource>
@@ -58,7 +57,6 @@
 					<failOnMissingWebXml>true</failOnMissingWebXml>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 </project>
