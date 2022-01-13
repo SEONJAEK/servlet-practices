@@ -17,6 +17,7 @@ public class EmaillistDaoTest {
 		vo.setFirstName("경");
 		vo.setLastName("선재");
 		vo.setEmail("nalal_sj@naver.com");
+		
 		boolean result = new EmaillistDao().insert(vo);
 		System.out.println(result? "success" : "fail");
 	}

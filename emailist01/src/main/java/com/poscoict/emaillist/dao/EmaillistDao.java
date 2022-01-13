@@ -38,13 +38,13 @@ public class EmaillistDao {
 				
 				while(rs.next()) {
 					Long no = rs.getLong(1);
-					String fristName = rs.getString(2);
+					String firstName = rs.getString(2);
 					String lastName = rs.getString(3);
 					String email = rs.getString(4);
 					
 					EmaillistVo vo = new EmaillistVo();
 					vo.setNo(no);
-					vo.setFirstName(lastName);
+					vo.setFirstName(firstName);
 					vo.setLastName(lastName);
 					vo.setEmail(email);
 					
@@ -76,7 +76,54 @@ public class EmaillistDao {
 	}
 
 	public boolean insert(EmaillistVo vo) {
-		// TODO Auto-generated method stub
-		return false;
+		boolean result = false;
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+			try {
+				//1. JDBC 드라이버 로딩
+				Class.forName("com.mysql.cj.jdbc.Driver"); //JDBC드라이버를 로딩//패키지명+ 클래스//드라이버마다 다름
+				
+				//2. 연결하기
+				String url="jdbc:mysql://localhost:3306/webdb?characterEncoding=UTF-8&serverTimezone=UTC";//JDBC URL//Uniform Resource Locator의 약어//주소를 알려주는 단일화된 형식의 문자열
+				//어떤 디비서버를 어떤 형식으로 접속할지 알려주는 것
+				conn = DriverManager.getConnection(url, "webdb", "webdb");
+				
+				//3. SQL준비
+				String sql = "insert into emaillist values(null,?,?,?)";
+				pstmt = conn.prepareStatement(sql);
+				
+				//4. 바인딩(binding)
+				pstmt.setString(1, vo.getFirstName());
+				pstmt.setString(2, vo.getLastName());
+				pstmt.setString(3, vo.getEmail());
+				
+				//5. SQL 실행
+				result = pstmt.executeUpdate() == 1;
+				
+			} catch (ClassNotFoundException e) {
+				System.out.println("MYSQL 연결실패");
+				System.out.println("드라이버 로딩 실패: "+ e);
+			}catch (SQLException e) {
+				System.out.print("error : "+ e);
+			}finally {
+				// 자원 정리
+				try {
+					if(rs != null) {
+						rs.close();
+					}
+					if(pstmt != null){
+						pstmt.close();
+					}
+					if(conn != null) {
+						conn.close();
+					}
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+				System.out.println("MYSQL 연결성공");
+			}
+		return result;
 	}
 }
