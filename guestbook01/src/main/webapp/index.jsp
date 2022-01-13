@@ -20,16 +20,25 @@
 		</table>
 		</form>
 		<br>
+		<% for(GuestbookVo vo : Guest){ %>
 		<table width=510 border=1>
 		<tr>
 			<td>[1]</td>
 			<td>안대혁</td>
 			<td>2013-01-15</td>
-			<td><a href="/guestbook01/deleteform.jsp">삭제</a></td>
+			<td><a href="/guestbook01/deleteform.jsp?no=1">삭제</a></td>
+			
 		</tr>
 		<tr>
-			<td colspan=4>안녕하세요</td>
+			<td colspan=4>
+			<%--<%=vo.getMessage().replaceAll("\n","<br>") %>--%>
+			가<br>
+			나<br>
+			다<br>
+		
+			라안녕하세요</td>
 		</tr>
 	</table>
+	<% } %>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <artifactId>servlet-practices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>guestbook01</artifactId>
+  <artifactId>emaillist02</artifactId>
   <packaging>war</packaging>
   
   <properties>
@@ -14,15 +14,9 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.17</version>
-		</dependency>
-
 	</dependencies>
 	<build>
-		<finalName>guestbook01</finalName>
+		<finalName>emaillist02</finalName>
 		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
 		<resources>
 			<resource>
