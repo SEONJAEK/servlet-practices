@@ -1,4 +1,11 @@
-﻿<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+﻿<%@page import="com.poscoict.emaillist.vo.EmaillistVo"%>
+<%@page import="java.util.List"%>
+<%@page import="com.poscoict.emaillist.dao.EmaillistDao"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+	EmaillistDao dao = new EmaillistDao();
+	List<EmaillistVo> list = dao.findAll();
+%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
