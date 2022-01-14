@@ -36,7 +36,7 @@
 		<tr>
 			<td><%= count-index++ %></td>
 			<td><%= vo.getName() %></td>
-			<td><%= vo.getReg_date() %></td>
+			<td><%= vo.getRegDate() %></td>
 			<td><a href="<%=request.getContextPath()%>/deleteform.jsp?no=<%=vo.getNo()%>>">삭제</a></td>
 
 		</tr>

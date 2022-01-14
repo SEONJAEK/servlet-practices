@@ -1,15 +1,15 @@
 package com.poscoict.guestbook.vo;
 
 public class GuestbookVo {
-	private int no;
+	private Long no;
 	private String name;
 	private String password;
-	private String reg_date;
+	private String regDate;
 	private String message;
-	public int getNo() {
+	public Long getNo() {
 		return no;
 	}
-	public void setNo(int no) {
+	public void setNo(Long no) {
 		this.no = no;
 	}
 	public String getName() {
@@ -24,11 +24,11 @@ public class GuestbookVo {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getReg_date() {
-		return reg_date;
+	public String getRegDate() {
+		return regDate;
 	}
-	public void setReg_date(String reg_date) {
-		this.reg_date = reg_date;
+	public void setRegDate(String regDate) {
+		this.regDate = regDate;
 	}
 	public String getMessage() {
 		return message;
@@ -38,9 +38,7 @@ public class GuestbookVo {
 	}
 	@Override
 	public String toString() {
-		return "GuestbookVo [no=" + no + ", name=" + name + ", password=" + password + ", reg_date=" + reg_date
+		return "GuestbookVo [no=" + no + ", name=" + name + ", password=" + password + ", regDate=" + regDate
 				+ ", message=" + message + "]";
 	}
-	
-	
 }
