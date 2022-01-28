@@ -17,26 +17,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>GuestbookController</servlet-name>
-    <url-pattern>/GuestbookController</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>GuestbookController1</display-name>
-    <servlet-name>GuestbookController1</servlet-name>
-    <servlet-class>com.poscoict.guestbook.controller.GuestbookController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>GuestbookController1</servlet-name>
-    <url-pattern>/GuestbookController1</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>GuestbookController2</display-name>
-    <servlet-name>GuestbookController2</servlet-name>
-    <servlet-class>com.poscoict.guestbook.controller.GuestbookController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>GuestbookController2</servlet-name>
-    <url-pattern>/GuestbookController2</url-pattern>
+    <url-pattern>/gb</url-pattern>
   </servlet-mapping>
 </web-app>
