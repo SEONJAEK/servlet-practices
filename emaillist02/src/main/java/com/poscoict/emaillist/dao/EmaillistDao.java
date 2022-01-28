@@ -112,8 +112,8 @@ public class EmaillistDao {
 		Connection conn = null;
 		try {
 			// 1. JDBC 드라이버 로딩
-			Class.forName("org.mariadb.cj.jdbc.Driver"); // JDBC드라이버를 로딩//패키지명+ 클래스//드라이버마다 다름
-
+			Class.forName("org.mariadb.jdbc.Driver"); // JDBC드라이버를 로딩//패키지명+ 클래스//드라이버마다 다름
+			
 			// 2. 연결하기
 			String url = "jdbc:mysql://192.168.0.52:3307/webdb?characterEncoding=UTF-8&serverTimezone=UTC";
 			// JDBC URL//Uniform Resource Locator의 약어//주소를 알려주는 단일화된 형식의 문자열

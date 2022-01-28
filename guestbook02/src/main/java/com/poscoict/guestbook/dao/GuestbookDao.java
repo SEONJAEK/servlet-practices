@@ -146,7 +146,7 @@ public class GuestbookDao {
 	private Connection getConnection() throws SQLException {
 		Connection conn = null;
 		try {
-			Class.forName("org.mariadb.cj.jdbc.Driver");
+			Class.forName("org.mariadb.jdbc.Driver"); // JDBC드라이버를 로딩//패키지명+ 클래스//드라이버마다 다름
 			String url = "jdbc:mysql://192.168.0.52:3307/webdb?characterEncoding=UTF-8&serverTimezone=UTC";
 			conn = DriverManager.getConnection(url, "webdb", "webdb");
 		} catch (ClassNotFoundException e) {
