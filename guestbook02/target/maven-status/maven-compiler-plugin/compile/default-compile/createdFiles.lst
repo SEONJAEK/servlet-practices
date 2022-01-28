@@ -1,0 +1,3 @@
+com\poscoict\guestbook\vo\GuestbookVo.class
+com\poscoict\guestbook\controller\GuestbookController.class
+com\poscoict\guestbook\dao\GuestbookDao.class

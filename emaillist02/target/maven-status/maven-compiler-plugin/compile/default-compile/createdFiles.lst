@@ -1,0 +1,4 @@
+com\poscoict\emaillist\vo\EmaillistVo.class
+com\poscoict\emaillist\dao\test\EmaillistDaoTest.class
+com\poscoict\emaillist\controller\EmaillistController.class
+com\poscoict\emaillist\dao\EmaillistDao.class
